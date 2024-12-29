@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "outDir": "lib",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true
+    },
+    "include": ["src"]
+}
