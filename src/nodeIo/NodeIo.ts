@@ -8,10 +8,10 @@ import { readRequest } from "./readRequest";
 import { writeResponse } from "./writeResponse";
 
 export class NodeIo implements Io {
-    private dirPath: string;
-    private signalsDir: string;
-    private requestPath: string;
-    private responsePath: string;
+    public readonly dirPath: string;
+    private readonly signalsDir: string;
+    private readonly requestPath: string;
+    private readonly responsePath: string;
     private responseFile: FileHandle | null;
 
     constructor(dirName: string) {

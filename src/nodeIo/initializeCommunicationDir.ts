@@ -3,8 +3,6 @@ import { lstat, mkdir } from "node:fs/promises";
 import { userInfo } from "node:os";
 
 export async function initializeCommunicationDir(dirPath: string) {
-    console.debug(`Creating communication dir ${dirPath}`);
-
     await mkdir(dirPath, { recursive: true, mode: 0o770 });
 
     const stats = await lstat(dirPath);
