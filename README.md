@@ -8,8 +8,12 @@ File based RPC server compatible with the Talon community command client
 
 ## Usage
 
-```ts
+```js
 import { NodeIo, TalonRpcServer } from "talon-rpc";
+
+function runCommand(commandId, args, options) {
+    // Do something
+}
 
 const io = new NodeIo("vscode-command-server");
 const rpc = new TalonRpcServer(io, runCommand);
