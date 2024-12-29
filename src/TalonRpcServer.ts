@@ -1,9 +1,12 @@
 import type { Io, Request, RequestCallback, RequestCallbackOptions } from "./types";
 
 export class TalonRpcServer {
-    constructor(private io: Io) {}
+    constructor(
+        private io: Io,
+        private requestCallback: RequestCallback,
+    ) {}
 
-    async executeRequest(requestCallback: RequestCallback): Promise<void> {
+    async executeRequest(): Promise<void> {
         await this.io.prepareResponse();
 
         let request: Request;
@@ -27,7 +30,7 @@ export class TalonRpcServer {
 
         try {
             // Wrap in promise resolve to handle both sync and async functions
-            commandPromise = Promise.resolve(requestCallback(commandId, args, options));
+            commandPromise = Promise.resolve(this.requestCallback(commandId, args, options));
 
             let commandReturnValue = null;
 
