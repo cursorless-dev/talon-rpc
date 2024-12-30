@@ -47,8 +47,9 @@ export class TalonRpcServer {
                 warnings,
             });
         } catch (err) {
+            const error = err instanceof Error ? err.message : String(err);
             await this.io.writeResponse({
-                error: (err as Error).message,
+                error,
                 uuid,
                 warnings,
             });
