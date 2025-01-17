@@ -18,14 +18,14 @@
     "files": [
         "lib/*"
     ],
-    "homepage": "https://github.com/AndreasArvidsson/talon-rpc",
+    "homepage": "https://github.com/cursorless-dev/talon-rpc",
     "funding": "https://github.com/sponsors/AndreasArvidsson",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AndreasArvidsson/talon-rpc.git"
+        "url": "git+https://github.com/cursorless-dev/talon-rpc.git"
     },
     "bugs": {
-        "url": "https://github.com/AndreasArvidsson/talon-rpc/issues"
+        "url": "https://github.com/cursorless-dev/talon-rpc/issues"
     },
     "scripts": {
         "build": "npm run build:cjs && npm run build:esm",
