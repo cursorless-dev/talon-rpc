@@ -1,7 +1,7 @@
 {
     "name": "talon-rpc",
     "displayName": "Talon RPC",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "RPC library for Talon",
     "author": "Andreas Arvidsson",
     "publisher": "AndreasArvidsson",
@@ -11,6 +11,7 @@
     "types": "lib/types/index.d.ts",
     "exports": {
         ".": {
+            "types": "./lib/types/index.d.ts",
             "require": "./lib/cjs/index.js",
             "import": "./lib/esm/index.js"
         }
