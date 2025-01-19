@@ -1,7 +1,7 @@
 {
     "name": "talon-rpc",
     "displayName": "Talon RPC",
-    "version": "2.1.2",
+    "version": "2.2.0",
     "description": "RPC library for Talon",
     "author": "Andreas Arvidsson",
     "publisher": "AndreasArvidsson",

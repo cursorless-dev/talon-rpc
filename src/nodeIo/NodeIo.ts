@@ -14,8 +14,8 @@ export class NodeIo implements Io {
     private readonly responsePath: string;
     private responseFile: FileHandle | null;
 
-    constructor(dirName: string) {
-        this.dirPath = getCommunicationDirPath(dirName);
+    constructor(dirName: string, tmpDir?: string) {
+        this.dirPath = getCommunicationDirPath(dirName, tmpDir);
         this.signalsDir = join(this.dirPath, "signals");
         this.requestPath = join(this.dirPath, "request.json");
         this.responsePath = join(this.dirPath, "response.json");
